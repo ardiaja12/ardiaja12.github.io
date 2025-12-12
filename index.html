@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XII TJKT B - SMK N 1 Saptosari</title>
+    <meta name="description" content="Website resmi kelas XII TJKT B SMK Negeri 1 Saptosari - Teknik Jaringan Komputer dan Telekomunikasi">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tkjwibu.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Enhanced Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle"></div>
+                <div class="logo-text-load">XII TJKT B</div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-percent">0%</div>
+        </div>
+    </div>
+
+    <!-- Floating Shapes Background -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">✓</div>
+        <div class="toast-message"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="oke.png" alt="TJKT Logo" class="logo-img">
+                <span class="logo-text">XII TJKT B</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#struktur">Struktur</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#artikel">Artikel</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#prestasi">Prestasi</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="gradient-bg"></div>
+            <div class="grid-overlay"></div>
+            <canvas id="particlesCanvas"></canvas>
+        </div>
+        
+        <div class="hero-content" data-tilt>
+            <div class="hero-card">
+                <h1 class="hero-title">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor-blink">|</span>
+                </h1>
+                <p class="hero-subtitle">Teknik Jaringan Komputer dan Telekomunikasi</p>
+                <p class="hero-school">SMK Negeri 1 Saptosari</p>
+                
+                <div class="hero-buttons">
+                    <a href="#tentang" class="btn-primary">
+                        <span>Kenali Kami</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#kontak" class="btn-secondary">
+                        <span>Hubungi Kami</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="tentang">
+        <h2 class="section-title fade-in-up">Tentang Kelas</h2>
+        <div class="about-content">
+            <div class="about-text fade-in-left">
+                <h3>Selamat Datang di XII TJKT B</h3>
+                <p>Kami adalah kelas XII Teknik Jaringan Komputer dan Telekomunikasi B di SMK Negeri 1 Saptosari. Kelas kami terdiri dari siswa-siswi yang berdedikasi tinggi dalam bidang teknologi jaringan, pemrograman, dan desain grafis.</p>
+                <p>Dengan semangat kolaborasi dan inovasi, kami terus mengembangkan kemampuan teknis dan soft skills untuk menghadapi tantangan dunia industri yang dinamis.</p>
+            </div>
+            <div class="about-stats fade-in-right">
+                <div class="stat-item" style="--delay: 0s" data-tilt>
+                    <div class="stat-number" data-count="35">0</div>
+                    <div class="stat-label">Siswa Aktif</div>
+                </div>
+                <div class="stat-item" style="--delay: 0.1s" data-tilt>
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Project Selesai</div>
+                </div>
+                <div class="stat-item" style="--delay: 0.2s" data-tilt>
+                    <div class="stat-number" data-count="8">0</div>
+                    <div class="stat-label">Prestasi</div>
+                </div>
+                <div class="stat-item" style="--delay: 0.3s" data-tilt>
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">Komitmen %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Structure Section -->
+    <section class="section" id="struktur">
+        <h2 class="section-title">Struktur Kelas</h2>
+        <p class="section-subtitle">Tim solid yang siap berkolaborasi</p>
+        <div class="structure-grid">
+            
+            <div class="member-card fade-in-scale" style="--delay: 0s" data-tilt>
+                <div class="member-photo">
+                    <img src="PP kosong.jpg" alt="Wali Kelas">
+                    <div class="member-overlay"></div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Shohifatul Aliyah</h3>
+                    <p class="member-role">Wali Kelas</p>
+                    <p class="member-desc">Membimbing dan mengarahkan siswa dalam pembelajaran.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-icon">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="member-card fade-in-scale" style="--delay: 0.1s" data-tilt>
+                <div class="member-photo">
+                    <img src="PP kosong.jpg" alt="Ketua Kelas">
+                    <div class="member-overlay"></div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Hermansyah Ryan</h3>
+                    <p class="member-role">Ketua Kelas</p>
+                    <p class="member-desc">Memimpin dan mengkoordinir seluruh kegiatan kelas.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-icon">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="member-card fade-in-scale" style="--delay: 0.2s" data-tilt>
+                <div class="member-photo">
+                    <img src="PP kosong.jpg" alt="Wakil Ketua">
+                    <div class="member-overlay"></div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Luluk Un Lintang</h3>
+                    <p class="member-role">Wakil Ketua Kelas</p>
+                    <p class="member-desc">Membantu ketua kelas dalam menjalankan tugas.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-icon">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="member-card fade-in-scale" style="--delay: 0.3s" data-tilt>
+                <div class="member-photo">
+                    <img src="PP kosong.jpg" alt="Sekretaris">
+                    <div class="member-overlay"></div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Linaisa Naftalimahaka</h3>
+                    <p class="member-role">Sekretaris</p>
+                    <p class="member-desc">Mencatat dan mendokumentasikan kegiatan kelas.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-icon">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="member-card fade-in-scale" style="--delay: 0.4s" data-tilt>
+                <div class="member-photo">
+                    <img src="PP kosong.jpg" alt="Bendahara">
+                    <div class="member-overlay"></div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Safika Izawati Alira</h3>
+                    <p class="member-role">Bendahara</p>
+                    <p class="member-desc">Mengelola keuangan kelas secara transparan.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-icon">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="member-card fade-in-scale" style="--delay: 0.5s" data-tilt>
+                <div class="member-photo">
+                    <img src="pp k.jpg" alt="Seksi Kebersihan">
+                    <div class="member-overlay"></div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Dimas Yahya</h3>
+                    <p class="member-role">Seksi Kebersihan</p>
+                    <p class="member-desc">Bertanggung jawab atas kebersihan kelas.</p>
+                    <div class="member-social">
+                        <a href="#" class="social-icon">📷</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Skills Section (NEW) -->
+    <section class="section section-alt" id="skills">
+        <h2 class="section-title">Keahlian Kelas</h2>
+        <p class="section-subtitle">Kompetensi yang kami kuasai</p>
+        <div class="skills-container">
+            
+            <div class="skill-item fade-in-up">
+                <div class="skill-header">
+                    <span class="skill-name">Networking & Infrastructure</span>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 90%"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item fade-in-up">
+                <div class="skill-header">
+                    <span class="skill-name">Programming (Python, JS, PHP)</span>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item fade-in-up">
+                <div class="skill-header">
+                    <span class="skill-name">Web Development</span>
+                    <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 88%"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item fade-in-up">
+                <div class="skill-header">
+                    <span class="skill-name">Graphic Design</span>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 80%"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item fade-in-up">
+                <div class="skill-header">
+                    <span class="skill-name">Database Management</span>
+                    <span class="skill-percent">82%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 82%"></div>
+                </div>
+            </div>
+            
+            <div class="skill-item fade-in-up">
+                <div class="skill-header">
+                    <span class="skill-name">Cybersecurity</span>
+                    <span class="skill-percent">78%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 78%"></div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="section" id="artikel">
+        <h2 class="section-title">Artikel & Pembahasan</h2>
+        <p class="section-subtitle">Berbagi pengetahuan seputar TJKT</p>
+        <div class="articles-grid">
+            
+            <div class="article-card fade-in-up" data-tilt>
+                <div class="article-image">
+                    <img src="topologi.jpg" alt="Topologi Jaringan">
+                </div>
+                <div class="article-content">
+                    <span class="article-category category-network">Jaringan</span>
+                    <h3 class="article-title">Mengenal Topologi Jaringan Komputer</h3>
+                    <p class="article-excerpt">Topologi jaringan adalah cara atau metode yang digunakan untuk menghubungkan komputer.</p>
+                    <a href="artikel/artikel topologi.html" class="read-more">
+                        Baca Selengkapnya
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="article-card fade-in-up" data-tilt>
+                <div class="article-image">
+                    <img src="Programer.jpg" alt="Programming">
+                </div>
+                <div class="article-content">
+                    <span class="article-category category-programming">Programming</span>
+                    <h3 class="article-title">Dasar-Dasar Pemrograman untuk Jaringan</h3>
+                    <p class="article-excerpt">Pemrograman dalam jaringan komputer sangat penting untuk automasi dan monitoring.</p>
+                    <a href="artikel/program.html" class="read-more">
+                        Baca Selengkapnya
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="article-card fade-in-up" data-tilt>
+                <div class="article-image">
+                    <img src="Desain grafis.jpg" alt="Desain Grafis">
+                </div>
+                <div class="article-content">
+                    <span class="article-category category-design">Desain Grafis</span>
+                    <h3 class="article-title">Peran Desain Grafis dalam IT</h3>
+                    <p class="article-excerpt">Skill desain grafis berguna untuk membuat UI/UX yang menarik.</p>
+                    <a href="artikel/desain.html" class="read-more">
+                        Baca Selengkapnya
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="galeri">
+        <h2 class="section-title">Galeri Kegiatan</h2>
+        <p class="section-subtitle">Dokumentasi aktivitas kelas kami</p>
+        <div class="gallery-grid">
+            
+            <div class="gallery-item fade-in-up" data-tilt>
+                <img src="praktik.jpg" alt="Praktikum" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3>Praktikum Jaringan</h3>
+                    <p>Belajar konfigurasi router dan switch</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in-up" data-tilt>
+                <img src="workshop.jpg" alt="Workshop" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3>Workshop Programming</h3>
+                    <p>Mengembangkan aplikasi web modern</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in-up" data-tilt>
+                <img src="bersama.jpg" alt="Kegiatan" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3>Kegiatan Kelas</h3>
+                    <p>Kebersamaan dan kolaborasi</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in-up" data-tilt>
+                <img src="lomba.jpg" alt="Lomba" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3>Lomba Networking</h3>
+                    <p>Kompetisi tingkat provinsi</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in-up" data-tilt>
+                <img src="kunjungan industri.jpg" alt="Study Tour" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3>Study Tour</h3>
+                    <p>Kunjungan ke perusahaan IT</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in-up" data-tilt>
+                <img src="presentasi.jpg" alt="Presentasi" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3>Presentasi Project</h3>
+                    <p>Showcase karya terbaik</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section section-alt" id="prestasi">
+        <h2 class="section-title">Prestasi Kelas</h2>
+        <p class="section-subtitle">Pencapaian yang membanggakan</p>
+        
+        <!-- Achievement Timeline -->
+        <div class="achievement-timeline">
+            
+            <div class="timeline-item fade-in-up">
+                <div class="timeline-marker">🏆</div>
+                <div class="timeline-content" data-tilt>
+                    <div class="timeline-date">2025</div>
+                    <h3>Juara 1 Fiksi Tingkat Nasional</h3>
+                    <p>Meraih juara pertama dalam kompetisi fiksi tingkat nasional dengan karya inovatif.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item fade-in-up">
+                <div class="timeline-marker">🥈</div>
+                <div class="timeline-content" data-tilt>
+                    <div class="timeline-date">2025</div>
+                    <h3>Juara 2 Krenovamaskat Nasional</h3>
+                    <p>Runner-up dalam kompetisi kreativitas dan inovasi maskot.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item fade-in-up">
+                <div class="timeline-marker">⭐</div>
+                <div class="timeline-content" data-tilt>
+                    <div class="timeline-date">2025</div>
+                    <h3>Best Innovation Project</h3>
+                    <p>Penghargaan proyek inovasi terbaik di SMK N 1 Saptosari.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item fade-in-up">
+                <div class="timeline-marker">🌟</div>
+                <div class="timeline-content" data-tilt>
+                    <div class="timeline-date">2024</div>
+                    <h3>Kelas Terbaik Semester Ganjil</h3>
+                    <p>Terpilih sebagai kelas dengan prestasi akademik terbaik.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Testimonial Section (NEW) -->
+    <section class="section" id="testimoni">
+        <h2 class="section-title">Testimoni</h2>
+        <p class="section-subtitle">Apa kata mereka tentang kelas kami</p>
+        <div class="testimonial-grid">
+            
+            <div class="testimonial-card fade-in-scale" data-tilt>
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">Kelas TJKT B sangat solid dan kompak. Kami selalu saling mendukung dalam belajar dan berkompetisi.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👤</div>
+                    <div class="author-info">
+                        <h4>Hermansyah Ryan</h4>
+                        <p>Ketua Kelas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card fade-in-scale" data-tilt>
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">Banyak ilmu dan pengalaman yang didapat selama belajar di TJKT B, terutama dalam bidang networking.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👤</div>
+                    <div class="author-info">
+                        <h4>Linaisa Naftalimahaka</h4>
+                        <p>Sekretaris</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card fade-in-scale" data-tilt>
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">Guru dan teman-teman di kelas sangat supportif, membuat proses belajar menjadi menyenangkan.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👤</div>
+                    <div class="author-info">
+                        <h4>Safika Izawati</h4>
+                        <p>Bendahara</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section (NEW) -->
+    <section class="section section-alt" id="kontak">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <p class="section-subtitle">Punya pertanyaan? Jangan ragu untuk menghubungi kami</p>
+        
+        <div class="contact-container">
+            <div class="contact-info fade-in-left">
+                <h3>Informasi Kontak</h3>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <h4>Alamat</h4>
+                        <p>Jl. Wonosari - Panggang Km. 8, Jetis, Saptosari, Gunungkidul, DIY</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-text">
+                        <h4>Email</h4>
+                        <p>xiitjktb@smkn1saptosari.sch.id</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div class="info-text">
+                        <h4>WhatsApp</h4>
+                        <p>+62 812-3456-7890</p>
+                    </div>
+                </div>
+                <div class="social-links-contact">
+                    <a href="#" class="social-link" data-tooltip="Instagram">📷</a>
+                    <a href="#" class="social-link" data-tooltip="TikTok">🎵</a>
+                    <a href="#" class="social-link" data-tooltip="Twitter">🐦</a>
+                </div>
+            </div>
+            
+            <form class="contact-form fade-in-right" id="contactForm">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Nama Lengkap" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Subjek" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-input" rows="5" placeholder="Pesan Anda" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <span>Kirim Pesan</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>XII TJKT B</h3>
+                <p>SMK Negeri 1 Saptosari<br>Teknik Jaringan Komputer dan Telekomunikasi</p>
+                <p>Jl. Wonosari - Panggang Km. 8, Jetis, Saptosari, Gunungkidul, DIY</p>
+            </div>
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#struktur">Struktur</a></li>
+                    <li><a href="#artikel">Artikel</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Lainnya</h4>
+                <ul>
+                    <li><a href="#galeri">Galeri</a></li>
+                    <li><a href="#prestasi">Prestasi</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 XII TJKT B - SMK N 1 Saptosari. All rights reserved. Developed with ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank" aria-label="Chat WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="molep.js"></script>
+</body>
+</html>
